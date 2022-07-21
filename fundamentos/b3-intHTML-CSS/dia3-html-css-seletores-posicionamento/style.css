@@ -1,0 +1,33 @@
+ol li{
+    background-color: yellow;
+}
+ol li:nth-child(even){
+    color: green;
+}
+ol li:nth-child(odd){
+    text-transform: lowercase;
+}
+.reder {
+    color: red;
+}
+.reder em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+ul li:nth-child(-n + 3){
+    color: blue;
+}
+#java{
+    color: palevioletred;
+}
+
+ul li:hover{
+    font-weight: bold;
+    color: blueviolet;
+}
