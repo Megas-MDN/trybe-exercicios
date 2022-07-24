@@ -300,7 +300,7 @@ function calcRoma(arr){
     //let soma = arr[0];
     let num = arr[0];
     for(let i = 1;i<arr.length;i+=1){
-        if(num < arr[i]){
+        if(num < arr[i]){ // compara o número da frente e troca o sinal do de trás se for menor q o da frente
             arr[i-1] = -arr[i-1];
             //console.log("Menor",num, arr[i]);
         }
@@ -310,7 +310,7 @@ function calcRoma(arr){
    return somaArray(arr);
 }
 
-console.log("O número romano",numRomano,"é igual a", calcRoma(convert(numRomano,nRoma)));
+//console.log("O número romano",numRomano,"é igual a", calcRoma(convert(numRomano,nRoma)));
 // 
 let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
 
@@ -451,6 +451,8 @@ function nomeSobrenome(arr){
 }
 //nomeSobrenome(moradores.blocoUm);
 //nomeSobrenome(moradores.blocoDois);
+
+
 
  
 
