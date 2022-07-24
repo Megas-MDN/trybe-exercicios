@@ -37,7 +37,7 @@ function div(a, b) {
 function rest(a, b) {
     return (a % b);
 }
-const c_a = (Math.floor(Math.random() * 20) + 1);
+const c_a = (Math.floor(Math.random() * 20) + 1); 
 const c_b = (Math.floor(Math.random() * 20) + 1);
 const c_c = (Math.floor(Math.random() * 20) + 1);
 console.log(c_a + " " + c_b + " " + c_c)
@@ -46,6 +46,8 @@ console.log("Subtracao " + sub(c_a, c_b));
 console.log("Multiplicacao " + vez(c_a, c_b));
 console.log("Divisao " + div(c_a, c_b));
 console.log("Resto " + rest(c_a, c_b));
+
+/*
 
 function maior(a, b) {
     if (a >= b) {
@@ -238,3 +240,5 @@ function salLiqui(s){
 
 }
 console.log("Salario Líquido pós descontos" + salLiqui(sal));
+
+*/

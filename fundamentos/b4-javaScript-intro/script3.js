@@ -63,24 +63,26 @@ function mCaracter(arr,flag = true){
 
 function primo(n){
     for(i = 2; i<n;i+=1){
-        if(n % i === 0){
-            return -1;
+        if(n % i === 0){  // n = 10  --- 10 / 2 
+            return -1; // n primo
         }
     }
     return 1;
 }
 function maxPrimo(n){
     let maxp = 0;
+    //n = n +1;
     for(let i = 2; i<n; i+=1){
         if(primo(i) === 1){
-            maxp = 1;
-            console.log(i);
+            maxp = i;
+            //console.log(i);
         }
     }
+    return maxp;
 }
 
-let number = 14;
-//maxPrimo(number);
+let number = 47; 
+//console.log(maxPrimo(10));
 // Bonus 1
 function astQuadrado(n){
     let c = '';
@@ -104,7 +106,7 @@ function triAst1(n){
 
 }
 
-//triAst1(8);
+triAst1(8); // piramide a esquerda
 //Bonus 3
 
 function triAst2(n){
@@ -121,7 +123,7 @@ function triAst2(n){
 
 
 }
-//triAst2(4)
+//triAst2(100) // Piramide a direita
 // Bonus 4
 
 //Resolve N de uma PA para calcular as camadas da piramide
@@ -167,7 +169,7 @@ function triAst3(n){
     
 }
 
-//triAst3(11)
+//triAst3(11) //piramide
 /*
 *
 
@@ -224,8 +226,7 @@ function triAst4(n){
     console.log(c);
 
 }
-//triAst4(7)
-
+//triAst4(9) //Piramide vazada
 
 
 //Bonus 6 
@@ -241,7 +242,7 @@ function isPrimo(n){
     }
 }
 let num1 = 19;
-//isPrimo(num1);
+//isPrimo(num1); // É primo?
 
 
 /*
