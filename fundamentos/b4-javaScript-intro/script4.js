@@ -142,7 +142,9 @@ newLivro = {
 
 //1
 
+
 function reverString(p){ // --------------------*********************************
+
     let vp = p.split('');
     vp = vp.reverse();
     return vp.join('');
@@ -226,7 +228,9 @@ function maisRepete(arr){
     }
     return [num, cont]; // retorna o numero q se repete mais e o cont é a qtd de vezes
 }
-console.log(`O numero que mais se repete é o ${maisRepete(arr3)[0]} :: ${maisRepete(arr3)[1]} vezes.`);
+
+//console.log(`O numero que mais se repete é o ${maisRepete(arr3)[0]} :: ${maisRepete(arr3)[1]} vezes.`);
+
 
 // 6
 let nat = 5;
@@ -245,7 +249,9 @@ function somaNatural(n){
 }
 //console.log(`Soma do numeros de 1 até ${nat} é ${somaNatural(nat)} `);
 
+
 //7 --------------------------------- ***********************************************
+
 function verificaFimPalavra(word, endi){
     let ini = reverString(endi);
     let wini = reverString(word);
@@ -451,8 +457,6 @@ function nomeSobrenome(arr){
 }
 //nomeSobrenome(moradores.blocoUm);
 //nomeSobrenome(moradores.blocoDois);
-
-
 
 
  
