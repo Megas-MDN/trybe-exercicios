@@ -1,0 +1,50 @@
+div:hover {
+    border: 1px solid black;
+    
+}
+
+#d1 {
+    background-color: blue;
+}
+
+#d2 {
+    background-color: red;
+}
+
+#d3 {
+    background-color: yellow;
+    height: 50px;
+
+}
+
+#d4 {
+    background-color: grey;
+}
+
+#d5 {
+    background-color: azure;
+}
+
+#h31 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+}
+
+#h32 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#h33 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+   
+}
+
+#h34 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#h35 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
