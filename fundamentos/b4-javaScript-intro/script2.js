@@ -117,7 +117,8 @@ let numb = [5,9,3,19,70,8,100,2,35,27];
 function ordenaMM(arr,f=false){
     //console.log(arr);
 
-    for(let i = 0;i<arr.length-1;i+=1){
+    for(let i = 0;i<arr.length-1;i+=1){ // 0 1 -- 0 2 /--- 0 3
+
         for(let j = i+1; j<arr.length;j+=1){
             if(f === true){ // Ordenaçao crescente do menor pro maior
                 if(arr[i] > arr[j]){
