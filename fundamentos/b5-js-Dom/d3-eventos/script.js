@@ -36,7 +36,7 @@ function pega(p1,p2){
 
 function createElemento(tag, str, pai, classe) {
     let elemento = pega('create',tag);
-    elemento.innerText = str;
+    elemento.innerText = str; // innerHTML
     elemento.className = classe;
     pai.appendChild(elemento);
 }
@@ -87,7 +87,7 @@ coloqueBotao('btn-holiday','Feriados','buttons-container');
 //console.log(divBtn);
 
 let flag = true;
-let flag2 = true;
+let flag2 = true;  //*********************************************************************** */
 function mudaCor(elemento,cor){
     if(flag){
         elemento.style.background = cor;
@@ -110,7 +110,7 @@ function clickFeriado(){
     for (let i = 0; i < arr.length; i += 1){
         mudaCor(arr[i],'red');
     }
-    flag = !flag;
+    flag = !flag;    /// **********************************************************************
 }
 function addCLick(btn){
     btn.addEventListener('click',clickFeriado);
@@ -203,4 +203,28 @@ function mudaCorDia(arr){
 
 }
 
-mudaCorDia(pega('qAll','.day'))
+mudaCorDia(pega('qAll','.day'));
+
+function addCompromisso(){
+    let caixa = pega('id','task-input');
+    if(caixa.value === ''){
+        console.log('Sem texto');
+        alert(' erro ao tentar "ADICIONAR".')
+    } else {
+        //console.log(caixa.value);
+        //tarefa(caixa.value);
+        createElemento('li', caixa.value, pega('query','.task-list'), '');
+    }
+    
+}
+
+function addEventAdicionar(elemento,event){ 
+    elemento.addEventListener(event,function (e){
+        
+        if (e.key === 'Enter' || e.target === pega('id','btn-add')){
+            addCompromisso();
+        }
+    })
+}
+addEventAdicionar(pega('id','btn-add'), 'click');
+addEventAdicionar(pega('id','task-input'),'keydown');
