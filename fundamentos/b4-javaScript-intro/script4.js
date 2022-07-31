@@ -229,7 +229,7 @@ function maisRepete(arr){
     return [num, cont]; // retorna o numero q se repete mais e o cont é a qtd de vezes
 }
 
-//console.log(`O numero que mais se repete é o ${maisRepete(arr3)[0]} :: ${maisRepete(arr3)[1]} vezes.`);
+console.log(`O numero que mais se repete é o ${maisRepete(arr3)[0]} :: ${maisRepete(arr3)[1]} vezes.`);
 
 
 // 6
