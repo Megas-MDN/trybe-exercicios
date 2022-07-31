@@ -19,7 +19,7 @@ function makeTech(e){
 }
 function liClicaveis(arr){
   for (let li of arr){
-    li.addEventListener('click', makeTech)
+    li.addEventListener('click', makeTech);
   }
 }
 liClicaveis(document.getElementsByTagName('li'));

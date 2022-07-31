@@ -101,7 +101,7 @@ function mudaTexto(elemento,txt){
         sext.push(elemento.innerText);
         elemento.innerText = txt;
     } else {
-        elemento.innerText = sext.shift();
+        elemento.innerText = sext.shift(); // Gambiarra
     }
 
 }
@@ -137,8 +137,6 @@ function bigSizeMe(e){
     //console.log(e.target.style.width, e.target.style.height, 'entrou');
     e.target.style.fontSize = '30px';
     e.target.style.fontWeight  = '550';
-
-    
 }
 function normSizeMe(e){
     //console.log(e.target.style.width, e.target.style.height,'saiu');
