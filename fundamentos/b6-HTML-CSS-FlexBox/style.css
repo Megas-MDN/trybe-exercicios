@@ -1,0 +1,32 @@
+* {
+
+}
+#btn-contain {
+    width: fit-content;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+button {
+    display: block;
+    margin: 0 auto;
+    float: left;
+    padding: 5px;
+}
+.qqq {
+    clear: both;
+    width: 0;
+}
+#mgvier {
+    position: relative;
+    margin-top: 25%;
+    transform: translateY(-50%);
+}
+div {
+    width: 500px;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+fieldset {
+    text-align: center;
+    margin: 0 auto; 
+}
