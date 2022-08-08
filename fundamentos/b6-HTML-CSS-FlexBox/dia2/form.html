@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <script src="../bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <title>TrybeTrip</title>
+</head>
+<body>
+    <div id="mgvier" class="container border my-5">
+    <form action="" method="get">
+        <fieldset id="field">
+            <legend class="mb-3 h2 text-center">Formulário para o TrybeTrip</legend>
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome: </label>
+                <input type="text" name="name" id="name" maxlength="40" minlength="10" placeholder="seu nome completo" autocomplete="off" autofocus required class="form-control">
+            </div>
+            <label for="email" class="form-label">E-mail: </label>
+            <div class="input-group mb-3">
+                    
+                    <input type="text" class="form-control" placeholder="seu-email" aria-label="seu-email" aria-describedby="basic-addon2" id="email">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="destiny" id="opc1" checked class="form-check-input">
+                <label for="opc1" class="form-check-label"><span>Cidade</span></label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="destiny" id="opc2" class="form-check-input">
+                <label for="opc2" class="form-check-label"><span>Campo</span></label>    
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="destiny" id="opc3" class="form-check-input">
+                <label for="opc3" class="form-check-label"><span>Praia</span></label>    
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" name="destiny" id="opc4" class="form-check-input">
+                <label for="opc4" class="form-check-label"><span>Montanha</span></label>    
+            </div>
+            <div class="form-floating mb-3">
+                <textarea name="motivo" id="textarea" cols="30" rows="10" maxlength="500" class="form-control"></textarea>
+                <label for="floatingTextarea">Comente em até 500 caracteres, sobre o motivo de você merecer ser escolhido</label>
+            </div>
+            <div class="mb-3">
+                <label for="data" class="real">
+                <input id="data" type="text" name="realDPX-min" placeholder="Escolha a data">
+                </label>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" id="promo" class="form-check-input">
+                <label for="promo" class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? </label>    
+            </div>
+            <div class="form-check mb-4">
+                <input type="checkbox" id="termos" class="form-check-input">
+                <label for="termos" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            </div>
+            <div id="btn-contain" class="mb-4 d-grid gap-3 d-md-block">
+            <button type="submit" id="send" class="btn btn-dark" disabled>Enviar</button>
+            <button type="reset" class="btn btn-light">Limpar</button>
+            </div>   
+        </fieldset>
+    </form>
+</div>
+    
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function()
+        {
+            var $min = document.querySelector('.real [name="realDPX-min"]');
+
+            $min.DatePickerX.init({
+                mondayFirst: true,
+                minDate    : new Date(5,8,2022),
+            });
+        });
+    </script>
+</body>
+</html>

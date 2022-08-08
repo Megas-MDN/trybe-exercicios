@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <title>TrybeTrip</title>
+</head>
+<body>
+    <div id="mgvier">
+    <form action="" method="get">
+        <fieldset id="field">
+            <legend>Formulário para o TrybeTrip</legend>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name" maxlength="40" minlength="10" placeholder="seu nome completo" autocomplete="off" autofocus required><br><br>
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com" autocomplete="off" required ><br><br>
+            <label for="opc1"><input type="radio" name="destiny" id="opc1" checked><span>Cidade</span></label>
+            <label for="opc2"><input type="radio" name="destiny" id="opc2"><span>Campo</span></label>
+            <label for="opc3"><input type="radio" name="destiny" id="opc3"><span>Praia</span></label>
+            <label for="opc4"><input type="radio" name="destiny" id="opc4"><span>Montanha</span></label><br><br>
+            <textarea name="motivo" id="textarea" cols="30" rows="10" maxlength="500"></textarea><br><br>
+            <label for="data">Data: </label>
+            <input type="date" id="data"><br><br>
+            <input type="checkbox" id="promo">
+            <label for="promo">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? </label>
+            <br><br>
+            <input type="checkbox" id="termos">
+            <label for="termos">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            <br><br>
+            <div id="btn-contain">
+            <button type="submit" id="send" disabled>Enviar</button>
+            <button type="reset">Limpar</button>
+            <div class="qqq"></div>
+            </div>
+            
+            
+        </fieldset>
+       
+    </form>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
