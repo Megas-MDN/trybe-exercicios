@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Calculadora</title>
+</head>
+<body>
+  <p>Informe dois números para realizar a soma:</p>
+  <label for='value1'>Valor 1:</label>
+  <input type='text' id='value1'>
+  <label for='value2'>Valor 2:</label>
+  <input type='text' id='value2'>
+  <button id='button'>Somar</button>
+  <p id='result'></p>
+  <script>
+    const validaVazio = num => (num === '') ? true : false;
+
+    function sum() {
+      const value1 = document.getElementById('value1').value;
+      const value2 = document.getElementById('value2').value;
+      const result = Number(value1) + Number(value2);
+      try {
+        if (validaVazio(value1) || validaVazio(value2) || Number.isNaN(result)) {
+        console.log('Nao numero');
+        console.log('no if', result);
+        throw new Error('Numeros inválidos');
+      } else {
+        console.log(result);
+        document.getElementById('result').innerHTML = `Resultado: ${result}`;
+      }
+      } catch (err) {
+        document.getElementById('result').innerHTML = `Erro: ${err.message}`;
+      }
+
+
+      document.getElementById('value1').value = '';
+      document.getElementById('value2').value = '';
+    }
+    window.onload = () => {
+      const button = document.getElementById('button');
+      button.addEventListener('click', sum);
+    }
+  </script>
+</body>
+</html>
